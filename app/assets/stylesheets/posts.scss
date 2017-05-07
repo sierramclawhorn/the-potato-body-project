@@ -112,7 +112,7 @@ img {
 }
 
 .icon {
-	max-width: 60px;
+	max-width: 80px;
 	padding-top: 6%;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -133,7 +133,6 @@ img {
   	float: inherit;
   	margin: auto;
   }
-  .icon { width: 50px; }
   .bannerImg { 
   	display: initial;
   	width: 200px;
@@ -142,10 +141,8 @@ img {
 }
 
 @media (max-width: 800px) {
-	.icon { width: 50px; }
-}
-
-@media only screen and (min-width: 300px) {
-	.icon { width: 100px; }
+	.icon { width: 120px; }
 	.bannerCredit { font-size: 10px; }
+	.socialMedia { width: 20%; }
+	.about { width: 80%; }
 }
