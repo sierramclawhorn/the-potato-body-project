@@ -1,0 +1,29 @@
+<% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
+	<%= link_to 'New Post', new_post_path %>
+  <br><br>
+<% end %>
+
+<div class='posts columns'>
+	<% @posts.reverse_each do |post| %>
+		<div class='titleTxt'>
+			<%= link_to post.title, post_path(post.id) %>
+		</div>
+		<div class='dateTxt'>
+			<%= post.date %>
+		</div>
+		<div class='bodyTxt'>
+			<%= raw post.body %>
+		</div>
+		<br><br>
+	<% end %>
+</div>
+
+<div class='footer'>
+	<div class='about column'>
+		<p>The <span class='titledItalic'>Potato Body Project</span> was an obsessive idea spawned by Sierra McLawhorn after many moons and many sketchbooks filled with creatures donning spud-replaced torsos.</p>
+	</div>
+
+	<div class='socialMedia column'>
+		<a href="http://www.instagram.com/potatobodies"><%= image_tag 'instagram.png', class: 'icon' %></a>
+	</div>
+</div>
