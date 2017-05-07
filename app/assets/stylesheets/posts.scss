@@ -145,6 +145,7 @@ img {
 	.icon { width: 50px; }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 680px) {
 	.icon { width: 100px; }
+	.bannerCredit { font-size: 10px; }
 }
