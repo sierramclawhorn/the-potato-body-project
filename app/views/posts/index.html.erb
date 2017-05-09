@@ -11,6 +11,9 @@
 		<div class='bodyTxt'>
 			<%= raw post.body %>
 		</div>
+		<div class='socialShare'>
+			<%= social_share_button_tag("The Potato Body Project: #{post.title}", :url => "http://thepotatobodyproject.com/posts/#{post.id}") %>
+		</div>
 		<br><br>
 	<% end %>
 </div>
