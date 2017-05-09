@@ -13,6 +13,14 @@ body {
     box-sizing: border-box;
 }
 
+.scrollingBanner {
+	position: fixed;
+	display: none;
+	width: 8vw;
+	top: 15px;
+	left: 0;
+}
+
 .banner {
 	padding-bottom: 5%;
 	text-align: center;
