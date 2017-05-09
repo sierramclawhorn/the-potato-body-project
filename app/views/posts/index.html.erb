@@ -12,7 +12,7 @@
 			<%= raw post.body %>
 		</div>
 		<div class='socialShare'>
-			<%= social_share_button_tag("The Potato Body Project: #{post.title}", :url => "http://thepotatobodyproject.com/posts/#{post.id}") %>
+			<div class="fb-like" data-href="https://thepotatobodyproject.com/" data-width="180" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 		</div>
 		<br><br>
 	<% end %>
