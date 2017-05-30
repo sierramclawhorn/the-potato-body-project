@@ -3,18 +3,20 @@
   <br><br>
 <% end %>
 
-<div class='posts columns'>
-	<% @posts.reverse_each do |post| %>
-		<div class='titleTxt'>
-			<%= link_to post.title, post_path(post.id) %>
-		</div>
-		<div class='bodyTxt'>
-			<%= raw post.body %>
-		</div>
-		<div class='socialShare'>
-			<%= social_share_button_tag('The Potato Body Project', :url => "http://thepotatobodyproject.com/posts/#{post.id}") %>
-		</div>
-		<br><br>
+<div class='posts'>
+	<% @posts.in_groups_of(3, false).each do |group| %>
+	  <div class="row">
+	    <div class="three columns">
+	      <% group.each do |post| %>
+	        <div class='titleTxt'>
+						<%= link_to post.title, post_path(post.id) if post %>
+					</div>
+					<div class='bodyTxt'>
+						<%= raw post.body if post %>
+					</div>
+	      <% end %>
+	    </div>
+	  </div>
 	<% end %>
 </div>
 
