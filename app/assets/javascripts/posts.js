@@ -1,4 +1,5 @@
-$(document).ready(function(){                    
+$(document).ready(function(){  
+
   $(window).scroll(function(){                          
     if ($(this).scrollTop() > 200) {
       $('.scrollingBanner').fadeIn(500);
@@ -6,4 +7,5 @@ $(document).ready(function(){
       $('.scrollingBanner').fadeOut(500);
     }
   });
+
 });
