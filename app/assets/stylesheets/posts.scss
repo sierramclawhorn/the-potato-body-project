@@ -33,6 +33,13 @@ body {
 	left: 0;
 }
 
+.scrollinginsta {
+	font-size: 60%;
+}
+	.scrollinginsta a {
+		text-decoration: none;
+	}
+
 .banner {
 	padding-bottom: 5%;
 	text-align: center;
@@ -54,7 +61,7 @@ body {
 .headerTitleImg {
 	max-width: 900px;
 }
-
+	
 .footer {
 	width: 80%;
 	margin: auto;
@@ -84,7 +91,7 @@ body {
 .individualPost {
 	display: inline-block;
 	width: 26vw;
-  height: 26vw;
+  	height: 26vw;
 	height: width;
 	border: 1px solid black;
 	vertical-align: top;
