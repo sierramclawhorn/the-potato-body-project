@@ -73,6 +73,15 @@ body {
 	text-decoration: none;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
 .about {
 	float: right;
 	width: 90%;
