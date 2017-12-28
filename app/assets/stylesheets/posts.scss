@@ -1,13 +1,13 @@
 $font-stack:'ltc-bodoni-175-it', sans-serif;
 $font-stack2:'ltc-bodoni-175', sans-serif;
 
-.row {
-	width: 100%;
-}
-.three {
-	display: inline-block;
-	width: 30%;
-}
+// .row {
+// 	width: 100%;
+// }
+// .three {
+// 	display: inline-block;
+// 	width: 30%;
+// }
 
 
 body {
@@ -89,24 +89,30 @@ body {
 }
 
 .individualPost {
-	display: inline-block;
-	width: 26vw;
-  	height: 26vw;
-	height: width;
-	border: 1px solid black;
-	vertical-align: top;
+	// border: 1px solid black;
+ 	margin-left: auto;
+    margin-right: auto;
+	width: 50vw;
+	margin-bottom: 1%;
 	overflow: scroll;
-	margin-bottom: 0.5%;
+	margin-bottom: 5%;
 }
 
 .indexTitleTxt {
-	display: none;
+	float: left;
+    width: 30%;
+    padding: 10px;
+    height: 260px;
+}
+
+.individualPost .indexTitleTxt {
+	padding-top: 10%;
 }
 
 .titleTxt,
 .indexTitleTxt {
-	font-family: "ostrich_sansblack",Helvetica Neue,Helvetica,sans-serif;
-	font-size: 1.5rem;
+	font-family: "Courier New";
+	font-size: 1.3rem;
 	line-height: 1.4;
 	text-transform: uppercase;
   	letter-spacing: 2px;
@@ -117,6 +123,11 @@ body {
 	text-decoration: none;
 	color: #222222;
 	cursor: pointer;
+}
+
+.titleTxt a:hover,
+.indexTitleTxt a:hover {
+	color: red;
 }
 
 .dateTxt {
@@ -134,6 +145,14 @@ body {
 	line-height: 1.8em;
 	letter-spacing: 0.5px;
 	font-weight: normal;
+	overflow: scroll;
+}
+
+.posts .bodyTxt {
+	float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
 }
 
 .socialShare {
