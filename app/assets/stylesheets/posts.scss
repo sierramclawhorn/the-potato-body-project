@@ -75,9 +75,10 @@ body {
 	
 .footer {
 	width: 80%;
+	text-align: center;
+	font-size: 11px;
 	margin: auto;
 	padding-top: 5%;
-	padding-bottom: 10%;
 }
 
 .selfLink {
@@ -93,8 +94,23 @@ a:hover {
 	color: red;
 }
 
+.backgroundAbout {
+	width: 102vw;
+	margin-left: -12%;
+	margin-top: -3%;
+	background: linear-gradient(#a7c7d6, white);
+	height: 9em;
+}
+
+.aboutDiv {
+	width: 70%;
+	margin: auto;
+	padding-top: 2%;
+}
+
 .about {
 	float: right;
+	margin-top: 2.6%;
 	width: 90%;
 	font-size: 11px;
 	line-height: 1.3;
@@ -132,10 +148,11 @@ a:hover {
 .titleTxt,
 .indexTitleTxt {
 	font-family: "Courier New";
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	line-height: 1.4;
 	text-transform: uppercase;
   	letter-spacing: 2px;
+  	word-wrap: break-word
 }
 
 .titleTxt a,
@@ -230,11 +247,11 @@ img {
 }
 
 @media (max-width: 600px) {
-  .about { display: none; }
-  .socialMedia { 
-  	float: inherit;
-  	margin: auto;
-  }
+  // .about { display: none; }
+  // .socialMedia { 
+  // 	float: inherit;
+  // 	margin: auto;
+  // }
   .bannerImg { 
   	display: initial;
   	width: 200px;

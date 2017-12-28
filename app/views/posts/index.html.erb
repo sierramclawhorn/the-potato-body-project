@@ -2,11 +2,25 @@
     <a href='/'><%= image_tag 'headerTitle2.png', class: 'headerTitleImg' %></a><br> 
 </div>
 
+<div class='backgroundAbout'>
+<div class='aboutDiv'>
+	<div class='about column'>
+		<p>The <span class='titledItalic'>Potato Body Project</span> was an obsessive idea spawned by <%= link_to 'Sierra McLawhorn', "http://www.sierramclawhorn.com", :target => '_blank', class: 'selfLink' %> after many moons and many sketchbooks filled with creatures donning spud-replaced torsos.</p>
+	</div>
+
+	<div class='socialMedia column'>
+		<a href="http://www.instagram.com/potatobodies"><%= image_tag 'instagram.png', class: 'icon' %></a>
+	</div>
+</div>
+</div>
+
+
 
 <% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 	<%= link_to 'New Post', new_post_path %>
   <br><br>
 <% end %>	
+
 
 
 <div class='posts'>
@@ -23,14 +37,5 @@
 </div>
 
 <div class='footer'>
-	<div class='about column'>
-		<p>The <span class='titledItalic'>Potato Body Project</span> was an obsessive idea spawned by <%= link_to 'Sierra McLawhorn', "http://www.sierramclawhorn.com", :target => '_blank', class: 'selfLink' %> after many moons and many sketchbooks filled with creatures donning spud-replaced torsos.</p>
-		<p><span class='bannerCredit'>
-			~ potato coyote image by Maxwell Mathews ~
-		</span></p>
-	</div>
-
-	<div class='socialMedia column'>
-		<a href="http://www.instagram.com/potatobodies"><%= image_tag 'instagram.png', class: 'icon' %></a>
-	</div>
+	<p>~ potato coyote image by Maxwell Mathews ~</p>
 </div>
