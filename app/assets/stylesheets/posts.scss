@@ -117,7 +117,7 @@ a:hover {
 }
 
 .individualPost {
-	// border: 1px solid black;
+	// border: 1px solid red;
  	margin-left: auto;
     margin-right: auto;
 	width: 50vw;
@@ -133,6 +133,13 @@ a:hover {
 
 .individualPost .indexTitleTxt {
 	padding-top: 10%;
+	height: 3em;
+}
+
+
+.individualPost .bodyTxt {
+  	max-height: 13em;
+  	overflow: scroll;
 }
 
 .titleTxt,
