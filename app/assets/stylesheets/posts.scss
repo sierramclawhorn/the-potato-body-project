@@ -121,7 +121,6 @@ a:hover {
  	margin-left: auto;
     margin-right: auto;
 	width: 50vw;
-	// overflow: scroll;
 	height: 15em;
 	margin-bottom: 1%;
 }
@@ -230,22 +229,26 @@ img {
 
 @media (max-width: 527px) {
   .individualPost { 
-  	display: block;
   	width: 100%; 
-  	height: auto;
   	border: none;
   }
   .indexTitleTxt { display: initial; }
 }
 
 @media (max-width: 600px) {
-  // .about { display: none; }
-  // .socialMedia { 
-  // 	float: inherit;
-  // 	margin: auto;
-  // }
   .about {
   	padding-left: 6%;
+  }
+  .individualPost .indexTitleTxt{
+  	height: 8em;
+  	// border: 1px black solid;
+  }
+  .individualPost .bodyTxt {
+  	height: 12.8em;
+  	// border: 1px black solid;
+  }
+  .individualPost {
+  	border: 1px black solid;
   }
   .bannerImg { 
   	display: initial;
@@ -259,11 +262,4 @@ img {
 	.bannerCredit { font-size: 10px; }
 	.socialMedia { width: 20%; }
 	.about { width: 80%; }
-}
-
-@media (max-width: 995px) {
-  .individualPost { 
-  	min-width: calc(100% / 3.1);
-  	margin: auto; 
-  }
 }
