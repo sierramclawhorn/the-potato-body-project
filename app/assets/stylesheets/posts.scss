@@ -52,13 +52,24 @@ body {
 	min-width: 140px;
 }
 
-.banner .header {
+.header {
+	width: 102vw;
+	margin: auto;
+	margin-left: -12%;
+}
+
+.headerTitleImg {
+	width: 100%;
+	margin: auto;
+}
+
+.showHeader {
 	width: 100%;
 	font-family: $font-stack2;
 	font-size: 5vw;
 }
 
-.headerTitleImg {
+.showHeaderTitleImg {
 	max-width: 900px;
 }
 	
@@ -111,7 +122,7 @@ a:hover {
 	float: left;
     width: 30%;
     padding: 10px;
-    height: 260px;
+    // height: 20%;
 }
 
 .individualPost .indexTitleTxt {

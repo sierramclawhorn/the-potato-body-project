@@ -1,7 +1,13 @@
+<div class='header'>
+    <a href='/'><%= image_tag 'headerTitle2.png', class: 'headerTitleImg' %></a><br> 
+</div>
+
+
 <% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 	<%= link_to 'New Post', new_post_path %>
   <br><br>
-<% end %>
+<% end %>	
+
 
 <div class='posts'>
 	<% @posts.each do |post| %>
